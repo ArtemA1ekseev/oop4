@@ -1,4 +1,4 @@
-public class Trucks extends Car{
+public class Trucks extends Car implements Competing{
 
     public Trucks(String brand, String model, double engineVolume) {
         super(brand, model, engineVolume);
@@ -12,5 +12,20 @@ public class Trucks extends Car{
     @Override
     public String stopMoving() {
         return "Грузовой автомобиль останавливается!";
+    }
+
+    @Override
+    public String pitStop() {
+        return "Количество остановок на ремонт 6.";
+    }
+
+    @Override
+    public String bestLapTime() {
+        return "Лучшее время круга 21.31 мин";
+    }
+
+    @Override
+    public String MaximumSpeed() {
+        return "Максимальное скорость 85 км/ч.";
     }
 }

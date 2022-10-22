@@ -1,4 +1,4 @@
-public class Autobus extends Car{
+public class Autobus extends Car implements Competing{
 
     public Autobus(String brand, String model, double engineVolume) {
         super(brand, model, engineVolume);
@@ -10,7 +10,17 @@ public class Autobus extends Car{
     }
 
     @Override
-    public String stopMoving() {
-        return "Автобус останавливается!";
+    public String pitStop() {
+        return "Количество остановок на ремонт 4.";
+    }
+
+    @Override
+    public String bestLapTime() {
+        return "Лучшее время круга 19.31 мин";
+    }
+
+    @Override
+    public String MaximumSpeed() {
+        return "Максимальное скорость 94 км/ч.";
     }
 }

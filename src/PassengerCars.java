@@ -1,4 +1,4 @@
-public class PassengerCars extends Car{
+public class PassengerCars extends Car implements Competing{
 
     public PassengerCars(String brand, String model, double engineVolume) {
         super(brand, model, engineVolume);
@@ -12,6 +12,21 @@ public class PassengerCars extends Car{
     @Override
     public String stopMoving() {
         return "На каждом колесе данная тормозная жидкость под давлением оказывает воздействие на тормоза, надавливая на поршень, воздействующий на тормозные колодки, которые охватывают и сжимают вращающийся барабан или диск. Трение замедляет вращение колес и всего автомобиля.";
+    }
+
+    @Override
+    public String pitStop() {
+        return "Количество остановок на ремонт 2.";
+    }
+
+    @Override
+    public String bestLapTime() {
+        return "Лучшее время круга 13.21 мин";
+    }
+
+    @Override
+    public String MaximumSpeed() {
+        return "Максимальное скорость 120 км/ч.";
     }
 }
 

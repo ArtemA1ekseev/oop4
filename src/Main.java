@@ -108,16 +108,16 @@ public class Main {
     private static void printInfoPassengerCars(PassengerCars passengerCars) {
         System.out.println("Легковой автомобиль - " + passengerCars.getBrand()
                 + ", модель - " + passengerCars.getModel() + ", объём двигателя - "
-                + passengerCars.getEngineVolume() + " " + passengerCars.starMoving() + " " + passengerCars.stopMoving());
+                + passengerCars.getEngineVolume() + " " + passengerCars.starMoving() + " " + passengerCars.stopMoving() + " " + passengerCars.pitStop() + " " + passengerCars.bestLapTime() + " " + passengerCars.MaximumSpeed());
     }
     private static void printInfoAutobus(Autobus autobus) {
         System.out.println("Автобус - " + autobus.getBrand()
                 + ", модель - " + autobus.getModel() + ", объём двигателя - "
-                + autobus.getEngineVolume() + " " + autobus.starMoving() + " " + autobus.stopMoving());
+                + autobus.getEngineVolume() + " " + autobus.starMoving() + " " + autobus.stopMoving() + " " + autobus.pitStop() + " " + autobus.bestLapTime() + " " + autobus.MaximumSpeed());
     }
     private static void printInfoTrucks(Trucks trucks) {
         System.out.println("Грузовой автомобиль - " + trucks.getBrand()
                 + ", модель - " + trucks.getModel() + ", объём двигателя - "
-                + trucks.getEngineVolume() + " " + trucks.starMoving() + " " + trucks.stopMoving());
+                + trucks.getEngineVolume() + " " + trucks.starMoving() + " " + trucks.stopMoving() + " " + trucks.pitStop() + " " + trucks.bestLapTime() + " " + trucks.MaximumSpeed());
     }
 }
