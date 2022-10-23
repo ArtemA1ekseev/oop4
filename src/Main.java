@@ -63,6 +63,11 @@ public class Main {
         printInfoTrucks(daf);
         printInfoTrucks(scania);
         printInfoTrucks(iveco);
+        System.out.println();
+
+        Car car = new Car("Kia", "Rio", 1.4);
+        DriverB driverB = new DriverB("А.В.В", 4, car);
+        System.out.println(driverB);
     }
     /*
     private static void printInfoCar(Car car) {
@@ -106,9 +111,7 @@ public class Main {
     }
     */
     private static void printInfoPassengerCars(PassengerCars passengerCars) {
-        System.out.println("Легковой автомобиль - " + passengerCars.getBrand()
-                + ", модель - " + passengerCars.getModel() + ", объём двигателя - "
-                + passengerCars.getEngineVolume() + " " + passengerCars.starMoving() + " " + passengerCars.stopMoving() + " " + passengerCars.pitStop() + " " + passengerCars.bestLapTime() + " " + passengerCars.MaximumSpeed());
+        System.out.println(new StringBuilder().append("Легковой автомобиль - ").append(passengerCars.getBrand()).append(", модель - ").append(passengerCars.getModel()).append(", объём двигателя - ").append(passengerCars.getEngineVolume()).append(" ").append(passengerCars.starMoving()).append(" ").append(passengerCars.stopMoving()).append(" ").append(passengerCars.pitStop()).append(" ").append(passengerCars.bestLapTime()).append(" ").append(passengerCars.MaximumSpeed()).toString());
     }
     private static void printInfoAutobus(Autobus autobus) {
         System.out.println("Автобус - " + autobus.getBrand()
